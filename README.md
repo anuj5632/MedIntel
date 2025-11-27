@@ -1,26 +1,72 @@
-# Equipment & Utility Agent (Agent 4)
+# MedIntel Agents (Agents Branch)# MedIntel Agents# Equipment & Utility Agent (Agent 4)
 
-Predictive maintenance service for hospital equipment. It ingests IoT-style sensor readings, detects anomalies with Isolation Forest, and surfaces JSON maintenance warnings through a FastAPI service.
 
-## Features
-- 📈 Isolation Forest anomaly detection on temperature, pressure, and vibration signals
-- 🧠 Re-usable training pipeline with data cleaning + scaling
-- ⚙️ FastAPI inference service with health + metrics endpoints
-- 📦 Dockerized deployment + typed Pydantic schemas
-- ✅ Pytest coverage for service logic
 
-## Project structure
+This branch aggregates several intelligent assistants that power MedIntel operations. Most agents live under the lowercase `agents/` directory; a few legacy scripts remain in `Agents/` (uppercase).
+
+
+
+| Agent | Path | Highlights |This branch aggregates multiple intelligent assistants that power MedIntel operations. Each agent lives in its own folder under `Agents/`:Predictive maintenance service for hospital equipment. It ingests IoT-style sensor readings, detects anomalies with Isolation Forest, and surfaces JSON maintenance warnings through a FastAPI service.
+
+| --- | --- | --- |
+
+| Forecasting Agent | `agents/forecasting_agent/` | Demand forecasting service with dataset generators and notebooks. |
+
+| Staff Optimization Agent | `agents/staff_optimization/` | Scheduling heuristics and staffing utilities. |
+
+| Inventory Management Agent | `Agents/InventoryManagement/` | Legacy medical supply monitoring scripts (kept for compatibility). || Agent | Path | Highlights |## Features
+
+| **Equipment & Utility Agent (Agent 4)** | `agents/equipment_utility/` | FastAPI anomaly-detection microservice with training pipeline, data, Dockerfile, and tests. |
+
+| --- | --- | --- |- 📈 Isolation Forest anomaly detection on temperature, pressure, and vibration signals
+
+## Working on the Equipment & Utility Agent
+
+| Forecasting Agent | `Agents/forecasting_agent/` | Demand forecasting notebooks, dataset generators, and inference service. |- 🧠 Re-usable training pipeline with data cleaning + scaling
+
+```powershell
+
+cd agents/equipment_utility| Staff Optimization Agent | `Agents/staff_optimization/` | Scheduling heuristics / optimization utilities. |- ⚙️ FastAPI inference service with health + metrics endpoints
+
+python -m venv .venv
+
+.\.venv\Scripts\activate| Inventory Management Agent | `Agents/InventoryManagement/` | Scripts for hospital supply monitoring. |- 📦 Dockerized deployment + typed Pydantic schemas
+
+pip install -r requirements.txt
+
+python training/train_model.py| **Equipment & Utility Agent** | `Agents/equipment_utility/` | FastAPI anomaly-detection service for predictive maintenance (Agent 4). |- ✅ Pytest coverage for service logic
+
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+
 ```
-.
-├── app/
-│   ├── __init__.py
-│   ├── config.py
-│   ├── main.py
-│   ├── models.py
-│   └── service.py
-├── data/
+
+
+
+That folder also includes `scripts/run_service_check.py` for smoke tests, pytest coverage in `tests/`, saved models under `models/`, and its own detailed README. To add future agents, create another folder under `agents/`, document it with a README, and list it inside `agents/__init__.py` so it is easy to discover.To work on a specific agent, `cd` into that directory and follow its local README. For example, the new Equipment & Utility Agent includes its own training data, FastAPI app, Dockerfile, smoke-test script, and README under `Agents/equipment_utility/`.## Project structure
+
+
+```
+
+```powershell.
+
+cd Agents/equipment_utility├── app/
+
+python -m venv .venv│   ├── __init__.py
+
+.\.venv\Scripts\activate│   ├── config.py
+
+pip install -r requirements.txt│   ├── main.py
+
+python training/train_model.py│   ├── models.py
+
+uvicorn app.main:app --host 0.0.0.0 --port 8000│   └── service.py
+
+```├── data/
+
 │   └── mock_iot_logs.csv
-├── models/              # Saved scaler + model (created after training)
+
+Feel free to add additional agents by creating a new folder inside `Agents/`, documenting it with a README, and wiring it into `Agents/__init__.py` for discoverability.├── models/              # Saved scaler + model (created after training)
+
 ├── tests/
 │   └── test_prediction.py
 ├── training/

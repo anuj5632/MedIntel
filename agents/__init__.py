@@ -1,8 +1,8 @@
-"""
-Agents package initializer
-This file makes the `agents` directory a Python package so imports like
-`import agents` or `agents.forecasting_agent.service` work when running
-from the repository root.
-"""
+"""Helpers for importing individual agents as a package."""
 
-__all__ = ["forecasting_agent"]
+__all__ = [
+	"forecasting_agent",
+	"staff_optimization",
+	"equipment_utility",
+	"InventoryManagement",
+]

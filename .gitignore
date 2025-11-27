@@ -1,10 +1,6 @@
 # Python
 __pycache__/
 *.py[cod]
-<<<<<<< HEAD
-# Python
-__pycache__/
-*.py[cod]
 *$py.class
 *.pyo
 *.pyd
@@ -12,7 +8,6 @@ __pycache__/
 
 # Virtual environments
 .venv/
-.venv
 venv/
 env/
 ENV/
@@ -31,9 +26,7 @@ dist/
 
 # Editors / IDEs
 .vscode/
-.vscode
 .idea/
-.idea
 *.sublime-project
 *.sublime-workspace
 *.swp
@@ -47,6 +40,10 @@ Thumbs.db
 # Data & model artifacts
 agents/forecasting_agent/data/
 agents/forecasting_agent/models/
+agents/equipment_utility/models/
+Agents/forecasting_agent/data/
+Agents/forecasting_agent/models/
+Agents/equipment_utility/models/
 models/*.joblib
 models/*.pkl
 *.csv
@@ -67,4 +64,3 @@ htmlcov/
 # Node (if applicable)
 node_modules/
 npm-debug.log
-.venv/
