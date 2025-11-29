@@ -1,0 +1,26 @@
+{
+  "_field_names": {
+    "public_health_messages": "Mensajes de Salud Pública",
+    "recommended_channels": "Canales de Comunicación Recomendados",
+    "risk_factors": "Factores de Riesgo",
+    "severity": "Severidad"
+  },
+  "location": "Nagpur",
+  "messages": {
+    "es": "═══ Aviso de Salud Pública ═══\n\n⚠️ ALERT\n\n\nAlerta de Salud - Se Requiere Acción\n\n\n📋 Acciones Recomendadas:\n\n• Stay vigilant about health indicators\n\n• Follow local health authority guidelines\n\n• Practice preventive hygiene measures\n\n\n👥 Grupos Vulnerables:\n\n• Children and elderly individuals\n\n• People with chronic conditions\n\n• Immunocompromised individuals\n\n\nℹ️ Manténgase Informado: Monitoree las actualizaciones del departamento de salud local y siga sus orientaciones."
+  },
+  "reasons": [
+    "La calidad del aire es muy pobre (210).",
+    "Puntuación de riesgo de brote moderada (0.65).",
+    "Índice de calor alto 41.0°C.",
+    "Los casos respiratorios están aumentando en clínicas y hospitales."
+  ],
+  "recommended_channels": [
+    "SMS",
+    "WhatsApp",
+    "Social Media",
+    "Posters"
+  ],
+  "severity": "ALERT",
+  "timestamp": "2025-11-29T08:04:58.034743"
+}

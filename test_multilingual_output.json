@@ -1,0 +1,28 @@
+{
+  "_field_names": {
+    "public_health_messages": "Public Health Messages",
+    "recommended_channels": "Recommended Communication Channels",
+    "risk_factors": "Risk Factors",
+    "severity": "Severity"
+  },
+  "location": "Nagpur",
+  "messages": {
+    "en": "═══ Public Health Advisory ═══\n\n⚠️ ALERT\n\n\nHealth Alert - Action Required\n\n\n📋 Recommended Actions:\n\n• Stay vigilant about health indicators\n\n• Follow local health authority guidelines\n\n• Practice preventive hygiene measures\n\n\n👥 Vulnerable Groups:\n\n• Children and elderly individuals\n\n• People with chronic conditions\n\n• Immunocompromised individuals\n\n\nℹ️ Stay Informed: Monitor local health department updates and follow their guidance.",
+    "es": "═══ Aviso de Salud Pública ═══\n\n⚠️ ALERT\n\n\nAlerta de Salud - Se Requiere Acción\n\n\n📋 Acciones Recomendadas:\n\n• Stay vigilant about health indicators\n\n• Follow local health authority guidelines\n\n• Practice preventive hygiene measures\n\n\n👥 Grupos Vulnerables:\n\n• Children and elderly individuals\n\n• People with chronic conditions\n\n• Immunocompromised individuals\n\n\nℹ️ Manténgase Informado: Monitoree las actualizaciones del departamento de salud local y siga sus orientaciones.",
+    "hi": "═══ सार्वजनिक स्वास्थ्य सलाह ═══\n\n⚠️ ALERT\n\n\nस्वास्थ्य चेतावनी - कार्रवाई आवश्यक है\n\n\n📋 अनुशंसित कार्य:\n\n• Stay vigilant about health indicators\n\n• Follow local health authority guidelines\n\n• Practice preventive hygiene measures\n\n\n👥 कमजोर समूह:\n\n• Children and elderly individuals\n\n• People with chronic conditions\n\n• Immunocompromised individuals\n\n\nℹ️ सूचित रहें: स्थानीय स्वास्थ्य विभाग के अपडेट की निगरानी करें और उनके मार्गदर्शन का पालन करें।"
+  },
+  "reasons": [
+    "AQI is very poor (210).",
+    "Moderate outbreak risk score (0.65).",
+    "High heat index of 41.0°C.",
+    "Respiratory cases are rising in clinics and hospitals."
+  ],
+  "recommended_channels": [
+    "SMS",
+    "WhatsApp",
+    "Social Media",
+    "Posters"
+  ],
+  "severity": "ALERT",
+  "timestamp": "2025-11-29T08:05:00.072512"
+}
