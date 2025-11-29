@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data & model artifacts
+agents/forecasting_agent/data/
+agents/forecasting_agent/models/
+agents/equipment_utility/models/
+Agents/forecasting_agent/data/
+Agents/forecasting_agent/models/
+Agents/equipment_utility/models/
+models/*.joblib
+models/*.pkl
+*.csv
+*.joblib
+*.pkl
+*.pickle
+*.sqlite
+
+# Logs
+logs/
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node (if applicable)
+node_modules/
+npm-debug.log
